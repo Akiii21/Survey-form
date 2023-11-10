@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">Share your thoughts! Take our quick Customer Satisfaction Survey and help us improve your experience.</p>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name<input 
+                id="name" 
+                type="text" 
+                required 
+                name="name"
+                placeholder="Enter Your Name"/>
+            </label>
+        </div>
+        <div>
+            <label for="email" id="email-label">Email<input 
+                id="email" 
+                type="email" 
+                name="email" 
+                required 
+                placeholder="Enter your email"/>
+            </label>
+        </div>
+        <div>
+            <label for="number" id="number-label">Age<input
+                id="number"
+                type="number"
+                required
+                placeholder="Age"
+                name="Age"
+                min="16"
+                max="99"/>
+            </label>
+        </div>
+        <div>
+            <label for="dropdown">Which option best describes your current role?
+                <select id="dropdown" name="dropdown">
+                    <option value=" ">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Full time learner</option>
+                    <option value="4">Perfer NOT to say </option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <p>How would you rate our service?</p>
+            <label for="excellent-rating"><input id="excellent-rating" value="excellent" type="radio" name="rating" checked/>Excellent</label>
+            <label for="good-rating"><input id="good-rating" value="good" type="radio" name="rating"/> Good</label>
+            <label for="fair-rating"><input id="fair-rating" value="fair" type="radio" name="rating"/>Fair</label>
+            <label for="poor-rating"><input id="poor-rating" value="poor" type="radio" name="rating"/>Poor</label>
+        </div>
+        <div>
+            <p>Which features do you like?</p>
+            <label for="quality"><input 
+                id="quality" 
+                type="checkbox" 
+                value="quality" 
+                name="features"/>
+                Quality
+            </label>
+            <label for="price">
+                <input  
+                type="checkbox" 
+                id="price" 
+                name="features" 
+                value="price"/>
+                Price
+            </label>
+            <label for="customer-service">
+                <input 
+                type="checkbox"
+                id="customer-service"
+                value="customer-service"
+                name="features"/>
+                Customer-Service
+            </label>
+            <label for="delivery-speed">
+                <input 
+                type="checkbox"
+                id="delivery-speed"
+                value="delivery-speed"
+                name="features"/>
+                delivery-speed
+            </label>
+        </div>
+        <div>
+            <p>Any comments or suggestions?</p>
+            <textarea 
+                id="comments" 
+                name="comments" 
+                placeholder="Please provide any additional comments" >
+            </textarea>         
+        </div>
+        <div>
+            <input type="submit" id="submit" value="Submit"/>
+        </div>
+    </form>
+</body>
+</html>
